@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+<style>
+    
+    .download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
+
+    .aboutme-text{
+        width: auto;
+        text-align: justify;
+    }
+
+    .html-icon, .python-icon{
+        width: 22px;
+        height: auto;
+        vertical-align: middle;
+        animation: bounce 1s infinite;
+    }
+    @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            25% {
+                transform: translateY(-10px);
+            }
+            50% {
+                transform: translateY(0);
+            }
+            75% {
+                transform: translateY(-5px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+    body{
+        font-family: "IBM Plex Mono", monospace;
+        background-color: rgb(228, 224, 220);
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        
+    }
+
+        .headline{
+            padding-top: 70px;
+        }
+
+        .header {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 20px;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    gap: 40px; /* Mehr Abstand zwischen den Links */
+}
+
+.navbar a {
+    font-size: 18px;
+    color: black; /* Textfarbe innerhalb der weißen Box */
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px; /* Abstände innerhalb der Kästchen */
+    background-color: white; /* Weiße Kästchen */
+    border-radius: 0px; /* Abgerundete Ecken */
+    transition: background-color 0.3s, transform 0.3s; /* Übergang für den Hover-Effekt */
+}
+
+.navbar a:hover {
+    background-color: #3498db; /* Blaue Hintergrundfarbe beim Hover */
+    color: white; /* Weißer Text bei Hover */
+    transform: scale(1.1); /* Leichtes Vergrößern beim Hover */
+}
+
+/* Responsive Design: Für Bildschirme kleiner als 768px */
+@media (max-width: 768px) {
+    .navbar {
+        gap: 15px; /* Weniger Abstand auf kleinen Geräten */
+    }
+
+    .navbar a {
+        font-size: 14px; /* Noch kleinere Schrift auf mobilen Geräten */
+        padding: 8px 15px; /* Weniger Padding für die Links */
+    }
+}
+
+/* Responsive Design: Für Bildschirme kleiner als 480px (smartphones im Hochformat) */
+@media (max-width: 480px) {
+    .navbar {
+        gap: 10px; /* Noch weniger Abstand auf sehr kleinen Geräten */
+    }
+
+    .navbar a {
+        font-size: 14px; /* Schriftgröße bleibt gleich */
+        padding: 6px 12px; /* Weniger Padding */
+    }
+}
+       
+</style>
+
+</head>
+
+<body>
+
+<header class="header"> 
+    
+
+<nav class="navbar">
+    <a href="#">HOME</a>
+    <a href="#">ABOUT ME</a>
+    <a href="#">BLOG</a>
+    <a href="#">CONTACT</a>
+
+</nav>
+
+</header>
+    
+    <h1 class="headline">Willkommen auf meiner Portfolio Seite!</h1>
+        
+    
+    <h2>Hier findest du meine persönlichen Kenntnisse, Blogposts oder Entwicklungen meiner Developer Karriere!</h2>
+    
+    <div class="aboutme-text"> <p>Hallo! 👋 Ich bin Gailan Rifaat, ein aufstrebender Webentwickler mit einer Leidenschaft für das Programmieren und Designen von modernen Webseiten. 
+        Obwohl ich noch relativ neu in der IT-Branche bin, habe ich bereits viele spannende Projekte abgeschlossen und freue mich darauf, meine Fähigkeiten weiter zu verbessern.
+        In den kommenden Monaten möchte ich mein Wissen in HTML und CSS vertiefen und die Grundlagen von JavaScript meistern. Mein Ziel ist es, funktionale und ansprechende Webseiten zu erstellen, die sowohl ästhetisch als auch technisch überzeugen. Langfristig möchte ich mich auch mit Python beschäftigen.</p>
+        <p>Ich freue mich darauf, die Reise als Entwickler fortzusetzen und neue Herausforderungen zu meistern! 🚀</p></div>
+    <p>FUTURE PLANS:</p>
+    
+    <p>HTML & CSS meistern <img class="html-icon" src="html.svg"></p>
+    <p>Python lernen <img class="python-icon" src="python.svg"></p>
+    
+    <p><a href="downloads/example.txt" download="example.txt" class="download-button">Lade meinen Source Code herunter</a></p>
+
+    
+</body>
+
+
+
+
+</html>
